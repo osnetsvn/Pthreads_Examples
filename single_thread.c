@@ -6,7 +6,7 @@ void* PrintHello(void* data)
 {
     int my_data = (int)data;     	/* data received by thread */
 
-    pthread_detach(pthread_self());
+//    pthread_detach(pthread_self());
     printf("Hello from new thread - got %d\n", my_data);
     pthread_exit(NULL);			/* terminate the thread */
 }
