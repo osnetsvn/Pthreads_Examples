@@ -6,7 +6,10 @@ void* PrintHello(void* data)
 {
     int my_data = (int)data;     	/* data received by thread */
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 3a9f1610dd813327dce85191d555b0cec0d122eb
     printf("Hello from new thread - got %d\n", my_data);
     pthread_exit(NULL);			/* terminate the thread */
 }
